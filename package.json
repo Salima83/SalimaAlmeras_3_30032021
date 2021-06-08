@@ -1,0 +1,19 @@
+{
+    "name": "salimaalmeras_3_30032021",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Salima83/SalimaAlmeras_3_30032021.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Salima83/SalimaAlmeras_3_30032021/issues"
+    },
+    "homepage": "https://github.com/Salima83/SalimaAlmeras_3_30032021#readme"
+}
