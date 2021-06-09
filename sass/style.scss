@@ -1,0 +1,125 @@
+$font-stack:Roboto,
+sans-serif;
+$bg:#e2e1e1;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+body {
+    margin: 0rem;
+    font-family: $font-stack;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    background-color: $bg;
+    padding: 1.25rem 1rem;
+}
+
+.image1 {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.discription-menu {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 5px 5px #f2f2f2;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.titre-menu {
+    display: grid;
+    grid-template-columns: 1fr 1.25rem;
+}
+
+.Fonction1 {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: auto;
+    background-color: #f2f2f2;
+    border: #f2f2f2 solid 2px;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.icone-fonctionnement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    min-width: 3rem;
+    min-height: 3rem;
+}
+
+.section2 {
+    padding: 2rem;
+    text-align: center;
+    background-color: $bg;
+}
+
+.Explorer {
+    display: flex;
+    align-content: center;
+}
+
+.Explorer__btn {
+    cursor: pointer;
+    border-radius: 90px;
+    padding: 1rem;
+    background-color: $secondary-color;
+}
+
+.contenue {
+    padding: 1rem;
+}
+
+.discription-menu {
+    display: block;
+}
+
+.note {
+    position: absolute;
+    padding: .4rem;
+    right: .60rem;
+    color: green;
+    background-color: #99E2D0;
+    border-radius: 3px;
+}
+
+.discription-restaurant {
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+.footer {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+.liens-Fonctionnement {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+}
