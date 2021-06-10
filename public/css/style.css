@@ -7,14 +7,27 @@ body {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 50%;
+  width: 40%;
+  padding: 0.5rem;
 }
 
 .map {
   display: flex;
   justify-content: center;
+}
+
+.section1 {
+  box-shadow: 0 0 0.3rem 0px #757373;
   background-color: #e2e1e1;
-  padding: 1.25rem 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.zone {
+  margin-right: 1rem;
+}
+
+.Localisation {
+  font-weight: bold;
 }
 
 .image1 {
@@ -59,9 +72,9 @@ body {
 }
 
 .section2 {
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
-  background-color: #e2e1e1;
+  background-color: #eee;
 }
 
 .Explorer {
@@ -72,8 +85,12 @@ body {
 .Explorer__btn {
   cursor: pointer;
   border-radius: 90px;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #FF79DA;
+}
+
+.Fonctionnement {
+  padding: 2rem 1rem;
 }
 
 .contenue {
@@ -93,9 +110,18 @@ body {
   border-radius: 3px;
 }
 
+.region {
+  margin-top: 0px;
+}
+
 .discription-restaurant {
   font-weight: 300;
   margin: 1.5rem 0;
+}
+
+.titre-contenue1 {
+  text-decoration: none;
+  margin: 0;
 }
 
 .footer {
