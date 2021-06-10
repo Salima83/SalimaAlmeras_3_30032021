@@ -63,6 +63,16 @@ body {
     margin-bottom: 1rem;
 }
 
+.Fonction1.compteur::before {
+    counter-increment: section3 1;
+    content: counter(section3);
+    background: #9356DC;
+    border-radius: 100px;
+    padding: 0rem 0.2rem;
+    color: white;
+    font-size: small;
+}
+
 .icone-fonctionnement {
     display: flex;
     align-items: center;
@@ -92,6 +102,7 @@ body {
 
 .Fonctionnement {
     padding: 2rem 1rem;
+    counter-reset: section3;
 }
 
 .contenue {
