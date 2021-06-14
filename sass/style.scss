@@ -93,11 +93,13 @@ body {
     border-radius: 1rem;
     margin-top: 2rem;
     text-decoration: none;
+    background-color: white;
 }
 
 .titre-menu {
     display: grid;
     grid-template-columns: 1fr 1.25rem;
+    padding: 1rem;
 }
 
 .Fonction1 {
@@ -157,6 +159,7 @@ body {
 
 .contenue {
     padding: 1rem;
+    background-color: #eee;
 }
 
 .discription-menu {
@@ -165,11 +168,13 @@ body {
 
 .note {
     position: absolute;
-    padding: .4rem;
-    right: .60rem;
+    padding: 0.4rem 1rem;
+    right: 2rem;
     color: green;
     background-color: #99E2D0;
-    border-radius: 3px;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: 900;
 }
 
 .region {
@@ -222,6 +227,10 @@ li {
     padding-left: 1rem;
 }
 
+.menu1-titre {
+    font-family: 'Shrikhand';
+}
+
 .conteneur-menus {
     background-color: #f2f2f2;
     border-radius: 2rem 2rem 0 0;
@@ -239,6 +248,11 @@ li {
 .les-entrees {
     max-width: 100%;
     padding: 0 1rem;
+    overflow: hidden;
+}
+
+.annimation {
+    animation-delay: 0s;
 }
 
 .sous-titre {
@@ -249,6 +263,10 @@ li {
     padding: 1rem;
     box-shadow: 0.25rem 0.25rem 1rem gainsboro;
     margin-top: 2rem;
+    animation: itemppear .6s;
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+    animation-fill-mode: both;
+    max-width: 100%;
 }
 
 .titre-section {
@@ -264,7 +282,7 @@ li {
     align-items: flex-end;
     justify-content: flex-end;
     font-weight: bold;
-    margin-top: -2rem;
+    margin-top: -1rem;
     margin-right: 1rem;
 }
 
@@ -286,4 +304,17 @@ li {
     color: #fff;
     background-image: linear-gradient(#9356DC, #FF79DA);
     border-radius: 90px;
+}
+
+.sous-titre__confirmed {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media(min-width:1280) {
+    .Fonctionnement {
+        padding: 10rem;
+        display: flex;
+    }
 }
