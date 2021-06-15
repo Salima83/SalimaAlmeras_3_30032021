@@ -286,6 +286,9 @@ li {
 }
 .sous-titre__titre-section {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .sous-titre__prix {
   display: flex;
@@ -293,6 +296,9 @@ li {
 }
 .sous-titre__precision {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .sous-titre__confirmed {
   display: flex;

@@ -287,6 +287,9 @@
         padding: 1rem;
         &__titre-section {
             margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__prix {
             display: flex;
@@ -294,6 +297,9 @@
         }
         &__precision {
             margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__confirmed {
             display: flex;
