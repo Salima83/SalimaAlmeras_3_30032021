@@ -308,6 +308,9 @@
             background-color: #99E2D0;
             width: 4rem;
             margin: -1rem -3rem -1rem 0rem;
+            border-radius: 0rem 1rem 1rem 0rem;
+            transform: translateX(100px);
+            transition: all 700ms;
         }
         &__titre-section {
             display: flex;
