@@ -37,6 +37,7 @@
     height: 50px;
     animation: custom-loading 1s linear infinite;
     animation-duration: 1s;
+    animation-play-state: paused;
 }
 
 @keyframes custom-loading {

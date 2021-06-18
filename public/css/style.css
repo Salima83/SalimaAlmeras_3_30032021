@@ -31,11 +31,13 @@
   left: 50%;
   margin: -25px 0 0 -25px;
   border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
+  border-top: 3px solid #99E2D0;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   animation: custom-loading 1s linear infinite;
+  animation-duration: 1s;
+  animation-play-state: paused;
 }
 
 @keyframes custom-loading {
@@ -293,6 +295,8 @@ li {
 .sous-titre__prix {
   display: flex;
   align-items: flex-end;
+  margin-left: 2rem;
+  font-weight: 800;
 }
 .sous-titre__precision {
   margin: 0;
@@ -304,13 +308,32 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #99E2D0;
   width: 4rem;
-  margin: -1rem -3rem -1rem 0rem;
+  margin: -1rem -1rem -1rem 0rem;
   border-radius: 0rem 1rem 1rem 0rem;
-  transform: translateX(100px);
-  transition: all 700ms;
-  animation: checkme 0.6s;
+  transition-property: margin-right;
+  transition-delay: 1s;
+}
+.sous-titre__confirmed:hover {
+  margin-right: -1rem;
+  flex: 25%;
+  transform: translate(0px);
+  background-color: #99E2D0;
+  cursor: pointer;
+}
+.sous-titre__check {
+  color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+  border-radius: 100px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .sous-titre__titre-section {
   display: flex;
@@ -319,6 +342,20 @@ li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.One {
+  animation: One 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes One {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

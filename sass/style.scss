@@ -1,276 +1,313 @@
-        @import '../base/-variables.scss';
-        @import'../base/-loader.scss';
-        body {
-            margin: 0;
-        }
-        
-        #logo {
-            display: flex;
-            align-items: center;
-            margin: auto;
-            width: 40%;
-            padding: 0.5rem;
-        }
-        
-        .map {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .section1 {
-            box-shadow: 0 0 0.3rem 0px #757373;
-            background-color: $bg;
-            padding: 0.9rem 1rem;
-        }
-        
-        .zone {
-            margin-right: 1rem;
-        }
-        
-        .Localisation {
-            font-weight: bold;
-        }
-        
-        .image1 {
-            object-fit: cover;
-            height: 200px;
-            width: 100%;
-            border-radius: 1rem 1rem 0 0;
-        }
-        
-        .discription-menu {
-            display: flex;
-            flex-direction: column;
-            box-shadow: 3px 5px 5px #f2f2f2;
-            border-radius: 1rem;
-            margin-top: 2rem;
-            text-decoration: none;
-            background-color: white;
-        }
-        
-        .titre-menu {
-            display: grid;
-            grid-template-columns: 1fr 1.25rem;
-            padding: 1rem;
-        }
-        
-        .Fonction1 {
-            display: flex;
-            align-items: center;
-            height: 3rem;
-            width: auto;
-            background-color: #f2f2f2;
-            border: #f2f2f2 solid 2px;
-            border-radius: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        
-        .Fonction1.compteur::before {
-            counter-increment: section3 1;
-            content: counter(section3);
-            background: #9356DC;
-            border-radius: 100px;
-            padding: 0rem 0.2rem;
-            color: white;
-            font-size: small;
-            margin-left: -.4rem;
-        }
-        
-        .icone-fonctionnement {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: -2px;
-            min-width: 3rem;
-            min-height: 3rem;
-        }
-        
-        .section2 {
-            padding: 1rem;
-            text-align: center;
-            background-color: #eee;
-        }
-        
-        .Explorer {
-            display: flex;
-            align-content: center;
-        }
-        
-        .Explorer {
-            cursor: pointer;
-            border-radius: 90px;
-            padding: 0.5rem;
-            background-color: $secondary-color;
-            &__btn {
-                cursor: pointer;
-                border-radius: 90px;
-                padding: 0.5rem;
-                background-color: $secondary-color;
-            }
-        }
-        
-        .Fonctionnement {
-            padding: 2rem 1rem;
-            counter-reset: section3;
-        }
-        
-        .contenue {
-            padding: 1rem;
-            background-color: #eee;
-        }
-        
-        .discription-menu {
-            display: block;
-        }
-        
-        .note {
-            position: absolute;
-            padding: 0.4rem 1rem;
-            right: 2rem;
-            color: green;
+@import '../base/-variables.scss';
+@import'../base/-loader.scss';
+body {
+    margin: 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    padding: 0.5rem;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.section1 {
+    box-shadow: 0 0 0.3rem 0px #757373;
+    background-color: $bg;
+    padding: 0.9rem 1rem;
+}
+
+.zone {
+    margin-right: 1rem;
+}
+
+.Localisation {
+    font-weight: bold;
+}
+
+.image1 {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.discription-menu {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 5px 5px #f2f2f2;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: white;
+}
+
+.titre-menu {
+    display: grid;
+    grid-template-columns: 1fr 1.25rem;
+    padding: 1rem;
+}
+
+.Fonction1 {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: auto;
+    background-color: #f2f2f2;
+    border: #f2f2f2 solid 2px;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Fonction1.compteur::before {
+    counter-increment: section3 1;
+    content: counter(section3);
+    background: #9356DC;
+    border-radius: 100px;
+    padding: 0rem 0.2rem;
+    color: white;
+    font-size: small;
+    margin-left: -.4rem;
+}
+
+.icone-fonctionnement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    min-width: 3rem;
+    min-height: 3rem;
+}
+
+.section2 {
+    padding: 1rem;
+    text-align: center;
+    background-color: #eee;
+}
+
+.Explorer {
+    display: flex;
+    align-content: center;
+}
+
+.Explorer {
+    cursor: pointer;
+    border-radius: 90px;
+    padding: 0.5rem;
+    background-color: $secondary-color;
+    &__btn {
+        cursor: pointer;
+        border-radius: 90px;
+        padding: 0.5rem;
+        background-color: $secondary-color;
+    }
+}
+
+.Fonctionnement {
+    padding: 2rem 1rem;
+    counter-reset: section3;
+}
+
+.contenue {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+.discription-menu {
+    display: block;
+}
+
+.note {
+    position: absolute;
+    padding: 0.4rem 1rem;
+    right: 2rem;
+    color: green;
+    background-color: #99E2D0;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: 900;
+}
+
+.region {
+    margin-top: 0px;
+}
+
+.discription-restaurant {
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+.titre-contenue1 {
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.liens-Fonctionnement {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+}
+
+.retour {
+    display: flex;
+    align-content: center;
+    place-items: center;
+    padding-left: 1rem;
+}
+
+.menu1-titre {
+    font-family: 'Shrikhand';
+}
+
+.conteneur-menus {
+    background-color: #f2f2f2;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -3rem;
+    position: relative;
+}
+
+.conteneur-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.les-entrees {
+    max-width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.button-com {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    padding: .75rem 1.5rem;
+    border: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    border-radius: 90px;
+}
+
+.sous-titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 20px 20px;
+    padding: 1rem;
+    &__titre-section {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 2rem;
+        font-weight: 800;
+    }
+    &__precision {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__confirmed {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        margin: -1rem -1rem -1rem 0rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+        transition-property: margin-right;
+        transition-delay: 1s;
+        &:hover {
+            margin-right: -1rem;
+            flex: 25%;
+            transform: translate(0px);
             background-color: #99E2D0;
-            border-radius: 6px;
-            margin-top: 1rem;
-            font-weight: 900;
-        }
-        
-        .region {
-            margin-top: 0px;
-        }
-        
-        .discription-restaurant {
-            font-weight: 300;
-            margin: 1.5rem 0;
-        }
-        
-        .titre-contenue1 {
-            text-decoration: none;
-            margin: 0;
-        }
-        
-        .footer {
-            background-color: black;
-            text-decoration: none;
-            color: white;
-            padding: 1rem;
-        }
-        
-        .liens-Fonctionnement {
-            text-decoration: none;
-            color: white;
-        }
-        
-        ul {
-            list-style-type: none;
-            padding-left: 1rem;
-            padding-top: 0rem;
-            padding-bottom: 1rem;
-        }
-        
-        li {
-            padding-bottom: 0.5rem;
-        }
-        
-        .titre-footer {
-            display: flex;
-            margin-left: 1rem;
-            font-family: "Shrikhand";
-        }
-        
-        .retour {
-            display: flex;
-            align-content: center;
-            place-items: center;
-            padding-left: 1rem;
-        }
-        
-        .menu1-titre {
-            font-family: 'Shrikhand';
-        }
-        
-        .conteneur-menus {
-            background-color: #f2f2f2;
-            border-radius: 2rem 2rem 0 0;
-            margin-top: -3rem;
-            position: relative;
-        }
-        
-        .conteneur-menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem;
-        }
-        
-        .les-entrees {
-            max-width: 100%;
-            padding: 0 1rem;
-            overflow: hidden;
-        }
-        
-        .button {
-            display: flex;
-            justify-content: center;
-            padding: 2rem;
-        }
-        
-        .button-com {
-            display: flex;
-            text-align: center;
-            align-content: center;
             cursor: pointer;
-            padding: .75rem 1.5rem;
-            border: 0;
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #fff;
-            background-image: linear-gradient(#9356DC, #FF79DA);
-            border-radius: 90px;
         }
-        
-        .sous-titre {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: white;
-            margin: 1rem;
-            border-radius: 20px 20px;
-            padding: 1rem;
-            &__titre-section {
-                margin: 0;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-            &__prix {
-                display: flex;
-                align-items: flex-end;
-            }
-            &__precision {
-                margin: 0;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-            &__confirmed {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #99E2D0;
-                width: 4rem;
-                margin: -1rem -3rem -1rem 0rem;
-                border-radius: 0rem 1rem 1rem 0rem;
-                transform: translateX(100px);
-                transition: all 700ms;
-                animation: checkme .6s;
-            }
-            &__titre-section {
-                display: flex;
-                flex-direction: column;
-                flex: 100%;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
+    }
+    &__check {
+        color: white;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+        border-radius: 100px;
+        &:hover {
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
             }
         }
+    }
+    &__titre-section {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.One {
+    animation: One 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @keyframes One {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
