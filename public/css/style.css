@@ -233,6 +233,12 @@ li {
   padding-left: 1rem;
 }
 
+.titre {
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 0.3rem;
+}
+
 .menu1-titre {
   font-family: "Shrikhand";
 }
@@ -311,6 +317,7 @@ li {
   width: 4rem;
   margin: -1rem -1rem -1rem 0rem;
   border-radius: 0rem 1rem 1rem 0rem;
+  transition: all 700ms;
   transition-property: margin-right;
   transition-delay: 1s;
 }
