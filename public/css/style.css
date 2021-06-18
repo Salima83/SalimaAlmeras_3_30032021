@@ -327,13 +327,8 @@ li {
   transition-duration: 0.5s;
   border-radius: 100px;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.sous-titre__check:hover {
+  transform: rotate(0);
 }
 .sous-titre__titre-section {
   display: flex;
