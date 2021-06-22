@@ -17,7 +17,7 @@
     border-bottom-color: ($secondary-color);
     border-left-color: ($tertiary-color);
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
     animation: spiner 1s linear;
