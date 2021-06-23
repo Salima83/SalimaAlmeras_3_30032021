@@ -189,7 +189,9 @@ body {
   right: 20px;
 }
 .fa.fa-heart:hover {
+  display: inline;
   color: #FF79DA;
+  background-image: #FF79DA;
   animation: like 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 @keyframes like {
