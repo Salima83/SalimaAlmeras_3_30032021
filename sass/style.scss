@@ -155,7 +155,6 @@ body {
     position: relative;
     right: 20px;
     &:hover {
-        display: block;
         color: $secondary-color;
         animation: like 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
         @keyframes like {
