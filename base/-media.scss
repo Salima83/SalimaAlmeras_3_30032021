@@ -1,11 +1,15 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
-@media #{$desktop} {
+@media #{
+ $desktop-width
+}
+{
     .Fonctionnement {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 2rem;
     }
+    
     .contenue {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

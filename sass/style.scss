@@ -102,13 +102,13 @@ body {
 .Explorer {
     cursor: pointer;
     border-radius: 90px;
-    padding: 0.5rem;
-    background-color: $secondary-color;
+    padding: 0.9rem;
+    background-image: linear-gradient($primary-color, $secondary-color);
     &__btn {
         cursor: pointer;
         border-radius: 90px;
-        padding: 0.5rem;
-        background-color: $secondary-color;
+        padding: 0.9rem;
+        background-image: linear-gradient($primary-color, $secondary-color);
     }
 }
 
@@ -148,6 +148,25 @@ body {
 
 .Coeur {
     font-size: 1.5rem;
+}
+
+.fa.fa-heart {
+    display: none;
+    position: relative;
+    right: 20px;
+    &:hover {
+        display: block;
+        color: $secondary-color;
+        animation: like 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        @keyframes like {
+            0% {
+                transform: translateZ(0);
+            }
+            100% {
+                transform: translateZ(-400px);
+            }
+        }
+    }
 }
 
 .titre-contenue1 {
