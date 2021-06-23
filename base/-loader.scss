@@ -6,6 +6,9 @@
     height: 100%;
     z-index: 1000;
     background-color: white;
+    animation-name: loader;
+    animation-fill-mode: both;
+    animation-delay: 1s;
 }
 
 .spin {
@@ -17,12 +20,20 @@
     border-bottom-color: ($secondary-color);
     border-left-color: ($tertiary-color);
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
     animation: spiner 1s linear;
     animation: spiner 3s linear;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
 @keyframes spiner {

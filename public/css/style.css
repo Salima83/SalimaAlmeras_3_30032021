@@ -6,6 +6,9 @@
   height: 100%;
   z-index: 1000;
   background-color: white;
+  animation-name: loader;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
 .spin {
@@ -23,8 +26,15 @@
   animation: spiner 1s linear;
   animation: spiner 3s linear;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @keyframes spiner {
   99.999% {
     transform: translate(-50%, -50%) rotate(360deg);
@@ -33,6 +43,18 @@
   100% {
     /* uniquement vers la fin de l'animation */
     opacity: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .Fonctionnement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .contenue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 body {
