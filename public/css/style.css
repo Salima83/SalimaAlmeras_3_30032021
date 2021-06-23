@@ -49,7 +49,7 @@
   .Fonctionnement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 2rem 2rem;
   }
 
   .contenue {
