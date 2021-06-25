@@ -278,7 +278,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   background-color: black;
   text-decoration: none;
   padding: 1rem;
