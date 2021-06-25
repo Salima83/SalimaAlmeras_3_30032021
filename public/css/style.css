@@ -47,9 +47,9 @@
 }
 @media (min-width: 1024px) {
   .Fonctionnement {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .titre {
