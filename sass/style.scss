@@ -177,11 +177,14 @@ body {
 }
 
 .footer {
-    position: relative;
+    position: absolute;
     background-color: black;
     text-decoration: none;
     padding: 1rem;
     color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .liens-Fonctionnement {
