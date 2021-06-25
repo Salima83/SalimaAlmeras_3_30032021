@@ -169,6 +169,7 @@ body {
   border-radius: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  box-shadow: 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
 }
 
 .Fonction1.compteur::before {
