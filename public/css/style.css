@@ -150,6 +150,7 @@ body {
   margin-top: 2rem;
   text-decoration: none;
   background-color: white;
+  color: black;
 }
 
 .titre-menu {
@@ -314,7 +315,8 @@ li {
   display: flex;
   align-content: center;
   place-items: center;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  font-size: x-large;
 }
 
 .titre {
