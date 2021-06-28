@@ -9,6 +9,9 @@ $desktop-width: 1024px;
     .titre {
         margin-left: 1rem;
     }
+    .conteneur-menus {
+        min-height: 800px;
+    }
     .les-menus {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
