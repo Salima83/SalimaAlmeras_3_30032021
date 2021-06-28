@@ -375,6 +375,10 @@ li {
   border-radius: 90px;
 }
 
+.fa-store {
+  color: #9356DC;
+}
+
 .sous-titre {
   display: flex;
   flex-direction: row;
