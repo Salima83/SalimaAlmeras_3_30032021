@@ -98,16 +98,16 @@ body {
   padding: 0.5rem;
 }
 
-.map {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-
 .section1 {
   box-shadow: 0 0 0.3rem 0px #757373;
   background-color: #f3f3f3;
   padding: 0.9rem 1rem;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .zone {
@@ -183,6 +183,7 @@ body {
   align-content: center;
   cursor: pointer;
 }
+
 .Explorer__btn {
   cursor: pointer;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -343,7 +344,8 @@ li {
   padding: 2rem;
 }
 .button .button-com {
-  display: flex;
+  cursor: pointer;
+  background-image: linear-gradient(#9356DC, #FF79DA);
   text-align: center;
   align-content: center;
   cursor: pointer;
@@ -352,7 +354,6 @@ li {
   font-weight: 700;
   font-size: 1.1rem;
   color: #fff;
-  background-image: linear-gradient(#9356DC, #FF79DA);
   border-radius: 90px;
   transition-property: transform;
   transition-duration: 400ms;
