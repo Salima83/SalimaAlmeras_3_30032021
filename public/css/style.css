@@ -61,10 +61,16 @@
   }
 
   .les-menus {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu {
+    max-width: 500px;
+    margin: 2rem;
+    margin-bottom: 3rem;
   }
 
   .discription1 {
@@ -96,10 +102,10 @@
   }
 
   .menus {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .contenue1 {
@@ -108,7 +114,8 @@
   }
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 #logo {

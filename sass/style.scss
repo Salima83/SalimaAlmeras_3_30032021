@@ -3,7 +3,8 @@
 @import'../base/-variables.scss';
 @import'../base/-media.scss';
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 #logo {
