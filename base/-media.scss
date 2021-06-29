@@ -11,6 +11,7 @@ $desktop-width: 1024px;
     }
     .conteneur-menus {
         min-height: 800px;
+        margin-top: -1rem;
     }
     .les-menus {
         display: flex;
@@ -24,10 +25,9 @@ $desktop-width: 1024px;
         margin-bottom: 3rem;
     }
     .menus {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .contenue1 {
         display: flex;
