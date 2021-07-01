@@ -90,7 +90,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-n #logo {
+#logo {
   display: flex;
   align-items: center;
   margin: auto;
