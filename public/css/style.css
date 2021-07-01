@@ -87,10 +87,10 @@
 }
 body {
   margin: 0 auto;
-  max-width: 1280px;
+  font-family: Roboto, sans-serif;
 }
 
-#logo {
+n #logo {
   display: flex;
   align-items: center;
   margin: auto;
