@@ -314,6 +314,7 @@ li {
   place-items: center;
   padding-left: 2rem;
   font-size: x-large;
+  color: black;
 }
 
 .titre {
@@ -429,9 +430,9 @@ li {
 }
 .sous-titre__check {
   color: white;
+  border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: 0.5s;
-  border-radius: 100px;
 }
 .sous-titre__check:hover {
   transform: rotate(0);

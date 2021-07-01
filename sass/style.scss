@@ -235,6 +235,7 @@ li {
     place-items: center;
     padding-left: 2rem;
     font-size: x-large;
+    color: black;
 }
 
 .titre {
@@ -332,9 +333,9 @@ li {
     }
     &__check {
         color: white;
+        border-radius: 100px;
         transform: rotate(180deg);
         transition-duration: .5s;
-        border-radius: 100px;
         &:hover {
             transform: rotate(0);
         }
