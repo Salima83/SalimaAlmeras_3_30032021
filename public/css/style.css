@@ -200,7 +200,9 @@ body {
   transition-duration: 400ms;
 }
 .Explorer__btn:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
   transform: scale(1.15);
+  box-shadow: 8px 8px 2px #acabab;
 }
 
 .Fonctionnement {
@@ -248,10 +250,15 @@ body {
 .far.fa-heart:hover {
   position: relative;
   display: inline-block;
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: 800;
   overflow: hidden;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  transition: all 0.3s linear 0s;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -259,6 +266,8 @@ body {
   background-position: 100%;
   transition: background-position 275ms ease;
   text-decoration: none;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
 .titre-contenue1 {
@@ -359,7 +368,9 @@ li {
   transition-duration: 400ms;
 }
 .button .button-com:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
   transform: scale(1.15);
+  box-shadow: 8px 8px 2px #acabab;
 }
 
 .fa-store {

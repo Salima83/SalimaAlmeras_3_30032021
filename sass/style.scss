@@ -17,7 +17,9 @@
     transition-property: transform;
     transition-duration: 400ms;
     &:hover {
+        background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
         transform: scale(1.15);
+        box-shadow: 8px 8px 2px #acabab;
     }
 }
 
@@ -91,7 +93,7 @@ body {
 .Fonction1.compteur::before {
     counter-increment: section3 1;
     content: counter(section3);
-    background: #9356DC;
+    background: $primary-color;
     border-radius: 100px;
     padding: 0rem 0.2rem;
     color: white;
@@ -168,10 +170,15 @@ body {
     &:hover {
         position: relative;
         display: inline-block;
-        font-size: 2em;
+        font-size: 3rem;
         font-weight: 800;
         overflow: hidden;
         background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+        transition: all 0.3s linear 0s;
+        position: relative;
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 800;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -179,6 +186,8 @@ body {
         background-position: 100%;
         transition: background-position 275ms ease;
         text-decoration: none; // text decorations are clipped in WebKit browsers
+        animation-fill-mode: both;
+        animation-delay: 1s;
     }
 }
 
@@ -229,7 +238,7 @@ li {
 }
 
 .titre {
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid $tertiary-color;
     width: 50px;
     padding-bottom: .3rem;
     margin-left: 1rem;
@@ -316,7 +325,7 @@ li {
         &:hover {
             width: 8em;
             transition: 1s;
-            background-color: #99E2D0;
+            background-color: $tertiary-color;
             cursor: pointer;
             margin-left: 1rem;
         }
