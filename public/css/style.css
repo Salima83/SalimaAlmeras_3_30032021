@@ -87,7 +87,7 @@
 }
 body {
   margin: 0 auto;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -420,6 +420,7 @@ li {
   border-radius: 0rem 1rem 1rem 0rem;
   transition: all 700ms;
   transition-property: margin-left;
+  overflow: hidden;
 }
 .sous-titre__confirmed:hover {
   width: 8em;
@@ -449,7 +450,35 @@ li {
 .One {
   animation: One 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+
 @keyframes One {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.two {
+  animation: two 0.8s cubic-bezier(0.96, 0.35, 0.05, 0.7) both;
+}
+@keyframes two {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.three {
+  animation: three 1s cubic-bezier(0.94, 0.38, 0.05, 0.7) both;
+}
+@keyframes three {
   0% {
     transform: translateY(-50px);
     opacity: 0;
