@@ -2,7 +2,6 @@
 @import'../base/-loader.scss';
 @import'../base/-variables.scss';
 @import'../base/-media.scss';
-@import'../base/-pages.scss';
 @mixin btn {
     cursor: pointer;
     background-image: linear-gradient($primary-color, $secondary-color);
@@ -146,7 +145,7 @@ body {
     padding: 0.4rem 1rem;
     right: 1rem;
     color: green;
-    background-color: #99E2D0;
+    background-color: $tertiary-color;
     border-radius: 6px;
     margin-top: 1rem;
     font-weight: 900;
