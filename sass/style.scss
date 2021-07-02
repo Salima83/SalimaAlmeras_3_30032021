@@ -293,14 +293,16 @@ li {
     overflow: hidden;
     width: 80%;
     box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
-    &:hover {
-        flex: 25%;
-    }
+    cursor: pointer;
+    transition: all 2000ms;
     &__titre-section {
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        &:hover {
+            flex: 25%;
+        }
     }
     &__prix {
         display: flex;
@@ -315,6 +317,7 @@ li {
         overflow: hidden;
     }
     &__confirmed {
+        flex: 25%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -325,10 +328,10 @@ li {
         transition-property: margin-left;
         overflow: hidden;
         &:hover {
-            width: 8em;
-            transition: 1s;
             background-color: $tertiary-color;
             cursor: pointer;
+            width: 8em;
+            transition: 1s;
             margin-left: 1rem;
         }
     }

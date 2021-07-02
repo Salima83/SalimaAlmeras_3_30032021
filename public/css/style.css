@@ -389,15 +389,17 @@ li {
   overflow: hidden;
   width: 80%;
   box-shadow: 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
-}
-.sous-titre:hover {
-  flex: 25%;
+  cursor: pointer;
+  transition: all 2000ms;
 }
 .sous-titre__titre-section {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.sous-titre__titre-section:hover {
+  flex: 25%;
 }
 .sous-titre__prix {
   display: flex;
@@ -412,6 +414,7 @@ li {
   overflow: hidden;
 }
 .sous-titre__confirmed {
+  flex: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,10 +426,10 @@ li {
   overflow: hidden;
 }
 .sous-titre__confirmed:hover {
-  width: 8em;
-  transition: 1s;
   background-color: #99E2D0;
   cursor: pointer;
+  width: 8em;
+  transition: 1s;
   margin-left: 1rem;
 }
 .sous-titre__check {
