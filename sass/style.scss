@@ -2,6 +2,7 @@
 @import'../base/-loader.scss';
 @import'../base/-variables.scss';
 @import'../base/-media.scss';
+@import'../base/-pages.scss';
 @mixin btn {
     cursor: pointer;
     background-image: linear-gradient($primary-color, $secondary-color);
@@ -160,10 +161,6 @@ body {
     margin: 1.5rem 0;
 }
 
-.Coeur {
-    font-size: 1.5rem;
-}
-
 .far.fa-heart {
     position: relative;
     right: 20px;
@@ -177,7 +174,7 @@ body {
         transition: all 0.3s linear 0s;
         position: relative;
         display: inline-block;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 800;
         background-clip: text;
         -webkit-background-clip: text;
@@ -295,14 +292,30 @@ li {
     box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
     cursor: pointer;
     transition: all 2000ms;
+    &__confirmed {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        margin: -1rem -1rem -1rem 0rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+        transition: all 700ms;
+        transition-property: margin-left;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        &:hover {
+            background-color: $tertiary-color;
+            cursor: pointer;
+            width: 8em;
+            transition: 1s;
+            margin-left: 1rem;
+        }
+    }
     &__titre-section {
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        &:hover {
-            flex: 25%;
-        }
     }
     &__prix {
         display: flex;
@@ -316,32 +329,15 @@ li {
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    &__confirmed {
-        flex: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 4rem;
-        margin: -1rem -1rem -1rem 0rem;
-        border-radius: 0rem 1rem 1rem 0rem;
-        transition: all 700ms;
-        transition-property: margin-left;
-        overflow: hidden;
-        &:hover {
-            background-color: $tertiary-color;
-            cursor: pointer;
-            width: 8em;
-            transition: 1s;
-            margin-left: 1rem;
-        }
-    }
     &__check {
         color: white;
         border-radius: 100px;
-        transform: rotate(-1turn);
-        transition: transform 500ms ease-in-out;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
         &:hover {
-            transform: rotate(0deg);
+            transform: rotate(0);
+            color: white;
+            transition: transform 500ms ease-in-out;
         }
     }
     &__titre-section {
