@@ -377,7 +377,6 @@ li {
 .sous-titre {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: white;
   margin: 1rem;
   border-radius: 20px 20px;
@@ -408,11 +407,12 @@ li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  flex: 1;
 }
 .sous-titre__prix {
   display: flex;
   align-items: flex-end;
-  margin-left: 2rem;
+  padding-right: 5rem;
   font-weight: 800;
 }
 .sous-titre__precision {
