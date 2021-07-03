@@ -386,6 +386,10 @@ li {
   box-shadow: 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.3s;
+  animation: fad-in;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
+  transform: translateY(50px);
 }
 .sous-titre__confirmed {
   display: flex;
@@ -431,12 +435,26 @@ li {
   transform: rotate(0);
 }
 
-@keyframes hoop {
+.One {
+  animation: fad-in 0.9s;
+}
+
+.two {
+  animation: fad-in 2s;
+}
+
+.three {
+  animation: fad-in 4s;
+}
+
+@keyframes fad-in {
   0% {
-    transform: scale(0);
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
