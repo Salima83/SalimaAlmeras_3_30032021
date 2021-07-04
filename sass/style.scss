@@ -2,6 +2,8 @@
 @import'../base/-loader.scss';
 @import'../base/-variables.scss';
 @import'../base/-media.scss';
+$color:white;
+$padding:1rem;
 @mixin btn {
     cursor: pointer;
     background-image: linear-gradient($primary-color, $secondary-color);
@@ -39,7 +41,7 @@ body {
 .section1 {
     box-shadow: 0 0 0.3rem 0px #757373;
     background-color: $bg;
-    padding: 0.9rem 1rem;
+    padding: 0.9rem $padding;
 }
 
 .map {
@@ -49,7 +51,20 @@ body {
 }
 
 .zone {
-    margin-right: 1rem;
+    margin-right: $padding;
+}
+
+.section2 {
+    padding: $padding;
+    text-align: center;
+    background-color: #eee;
+    &__.discription-restaurant {
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+    .Explorer__btn {
+        @include btn;
+    }
 }
 
 .image1 {
@@ -67,14 +82,19 @@ body {
     border-radius: 1rem;
     margin-top: 2rem;
     text-decoration: none;
-    background-color: white;
+    background-color: $color;
     color: black;
 }
 
 .titre-menu {
     display: grid;
     grid-template-columns: 1fr 1.25rem;
-    padding: 1rem;
+    padding: $padding;
+}
+
+.Fonctionnement {
+    padding: 2*$padding $padding;
+    counter-reset: section3;
 }
 
 .Fonction1 {
@@ -90,13 +110,13 @@ body {
     box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
 }
 
-.Fonction1.compteur::before {
+.compteur::before {
     counter-increment: section3 1;
     content: counter(section3);
     background: $primary-color;
     border-radius: 100px;
     padding: 0rem 0.2rem;
-    color: white;
+    color: $color;
     font-size: small;
     margin-left: -.4rem;
 }
@@ -110,29 +130,14 @@ body {
     min-height: 3rem;
 }
 
-.section2 {
-    padding: 1rem;
-    text-align: center;
-    background-color: #eee;
-}
-
 .Explorer {
     display: flex;
     align-content: center;
     cursor: pointer;
 }
 
-.Explorer__btn {
-    @include btn;
-}
-
-.Fonctionnement {
-    padding: 2rem 1rem;
-    counter-reset: section3;
-}
-
 .contenue {
-    padding: 1rem;
+    padding: $padding;
     background-color: #eee;
 }
 
@@ -144,22 +149,17 @@ body {
 
 .note {
     position: absolute;
-    padding: 0.4rem 1rem;
-    right: 1rem;
+    padding: 0.4rem $padding;
+    right: $padding;
     color: green;
     background-color: $tertiary-color;
     border-radius: 6px;
-    margin-top: 1rem;
+    margin-top: $padding;
     font-weight: 900;
 }
 
 .region {
     margin-top: 0px;
-}
-
-.discription-restaurant {
-    font-weight: 300;
-    margin: 1.5rem 0;
 }
 
 .far.fa-heart {
@@ -198,8 +198,8 @@ body {
     position: relative;
     background-color: black;
     text-decoration: none;
-    padding: 1rem;
-    color: white;
+    padding: $padding;
+    color: $color;
     bottom: 0;
     left: 0;
     right: 0;
@@ -207,14 +207,14 @@ body {
 
 .liens-Fonctionnement {
     text-decoration: none;
-    color: white;
+    color: $color;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 1rem;
+    padding-left: $padding;
     padding-top: 0rem;
-    padding-bottom: 1rem;
+    padding-bottom: $padding;
 }
 
 li {
@@ -231,7 +231,7 @@ li {
     display: flex;
     align-content: center;
     place-items: center;
-    padding-left: 2rem;
+    padding-left: 2*$padding;
     font-size: x-large;
     color: black;
 }
@@ -263,14 +263,14 @@ li {
 
 .les-entrees {
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0 $padding;
     overflow: hidden;
 }
 
 .button {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2*$padding;
     .button-com {
         @include btn;
     }
@@ -283,7 +283,7 @@ li {
 .sous-titre {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: $color;
     margin: 1rem;
     border-radius: 20px 20px;
     padding: 1rem;
@@ -321,7 +321,7 @@ li {
     &__prix {
         display: flex;
         align-items: flex-end;
-        padding-right: 5rem;
+        padding-right: 5*$padding;
         font-weight: 800;
     }
     &__precision {
@@ -331,7 +331,7 @@ li {
         overflow: hidden;
     }
     &__check {
-        color: white;
+        color: $color;
         border-radius: 100px;
         transform: rotate(180deg);
         transition-duration: 0.5s;

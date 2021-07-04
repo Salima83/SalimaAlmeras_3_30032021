@@ -114,6 +114,36 @@ body {
   margin-right: 1rem;
 }
 
+.section2 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #eee;
+}
+.section2__.discription-restaurant {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.section2 .Explorer__btn {
+  cursor: pointer;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 90px;
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.section2 .Explorer__btn:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+  transform: scale(1.15);
+  box-shadow: 8px 8px 2px #acabab;
+}
+
 .image1 {
   object-fit: cover;
   height: 200px;
@@ -139,6 +169,11 @@ body {
   padding: 1rem;
 }
 
+.Fonctionnement {
+  padding: 2rem 1rem;
+  counter-reset: section3;
+}
+
 .Fonction1 {
   display: flex;
   align-items: center;
@@ -152,7 +187,7 @@ body {
   box-shadow: 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
 }
 
-.Fonction1.compteur::before {
+.compteur::before {
   counter-increment: section3 1;
   content: counter(section3);
   background: #9356DC;
@@ -172,42 +207,10 @@ body {
   min-height: 3rem;
 }
 
-.section2 {
-  padding: 1rem;
-  text-align: center;
-  background-color: #eee;
-}
-
 .Explorer {
   display: flex;
   align-content: center;
   cursor: pointer;
-}
-
-.Explorer__btn {
-  cursor: pointer;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  text-align: center;
-  align-content: center;
-  cursor: pointer;
-  padding: 0.75rem 1.5rem;
-  border: 0;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #fff;
-  border-radius: 90px;
-  transition-property: transform;
-  transition-duration: 400ms;
-}
-.Explorer__btn:hover {
-  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
-  transform: scale(1.15);
-  box-shadow: 8px 8px 2px #acabab;
-}
-
-.Fonctionnement {
-  padding: 2rem 1rem;
-  counter-reset: section3;
 }
 
 .contenue {
@@ -234,11 +237,6 @@ body {
 
 .region {
   margin-top: 0px;
-}
-
-.discription-restaurant {
-  font-weight: 300;
-  margin: 1.5rem 0;
 }
 
 .far.fa-heart {
