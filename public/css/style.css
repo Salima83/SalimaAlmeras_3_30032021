@@ -22,10 +22,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  animation: spiner 2s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
 }
 
 @keyframes loader {
@@ -34,14 +43,12 @@
     z-index: -1;
   }
 }
-@keyframes spiner {
-  99.999% {
-    transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 1;
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    /* uniquement vers la fin de l'animation */
-    opacity: 0;
+    transform: rotate(360deg);
   }
 }
 @media (min-width: 1024px) {
