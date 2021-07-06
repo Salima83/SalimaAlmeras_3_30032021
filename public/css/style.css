@@ -92,7 +92,6 @@ body {
 
 #logo {
   display: flex;
-  align-items: center;
   margin: auto;
   width: 40%;
   padding: 0.5rem;
@@ -123,12 +122,12 @@ body {
   font-weight: 300;
   margin: 1.5rem 0;
 }
-.section2 .Explorer {
+.section2 .explorer {
   display: flex;
   align-content: center;
   cursor: pointer;
 }
-.section2 .Explorer__btn {
+.section2 .explorer__btn {
   cursor: pointer;
   background-image: linear-gradient(#9356DC, #FF79DA);
   text-align: center;
@@ -143,29 +142,29 @@ body {
   transition-property: transform;
   transition-duration: 400ms;
 }
-.section2 .Explorer__btn:hover {
+.section2 .explorer__btn:hover {
   background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
   transform: scale(1.15);
   box-shadow: 8px 8px 2px #acabab;
 }
 
-.Fonctionnement {
+.fonctionnement {
   padding: 2rem 1rem;
   counter-reset: section3;
 }
-.Fonctionnement .Fonction1 {
+.fonctionnement .fonction1 {
   display: flex;
   align-items: center;
   height: 3rem;
   width: auto;
   background-color: #f2f2f2;
-  border: #f2f2f2 solid 2px;
+  border: #eee solid 2px;
   border-radius: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   box-shadow: 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
 }
-.Fonctionnement .compteur::before {
+.fonctionnement .compteur::before {
   counter-increment: section3 1;
   content: counter(section3);
   background: #9356DC;
@@ -175,7 +174,7 @@ body {
   font-size: small;
   margin-left: -0.4rem;
 }
-.Fonctionnement .icone-fonctionnement {
+.fonctionnement .icone-fonctionnement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +236,7 @@ body {
 .far.fa-heart:hover {
   position: relative;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   overflow: hidden;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
