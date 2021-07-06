@@ -1,1 +1,158 @@
+.liens-Fonctionnement {
+    text-decoration: none;
+    color: $color;
+}
 
+ul {
+    list-style-type: none;
+    padding-left: $padding;
+    padding-top: 0rem;
+    padding-bottom: $padding;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+}
+
+.retour {
+    display: flex;
+    align-content: center;
+    place-items: center;
+    padding-left: 2*$padding;
+    font-size: x-large;
+    color: black;
+}
+
+.titre {
+    border-bottom: 3px solid $tertiary-color;
+    width: 50px;
+    padding-bottom: .3rem;
+    margin-left: 1rem;
+}
+
+.menu1-titre {
+    font-family: 'Shrikhand';
+}
+
+.conteneur-menus {
+    background-color: #f2f2f2;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -3rem;
+    position: relative;
+}
+
+.conteneur-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.les-entrees {
+    max-width: 100%;
+    padding: 0 $padding;
+    overflow: hidden;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 2*$padding;
+    .button-com {
+        @include btn;
+    }
+}
+
+.fa-store {
+    color: $primary-color;
+}
+
+.sous-titre {
+    display: flex;
+    flex-direction: row;
+    background-color: $color;
+    margin: 1rem;
+    border-radius: 20px 20px;
+    padding: 1rem;
+    overflow: hidden;
+    width: 80%;
+    box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition: .3s;
+    animation: fad-in;
+    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation-fill-mode: both;
+    transform: translateY(50px);
+    &__confirmer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        margin: -1rem -1rem -1rem 0rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+        overflow: hidden;
+        background-color: $tertiary-color;
+        margin-right: -100px;
+        transition-duration: 0.5s;
+    }
+    &:hover &__confirmer {
+        margin-right: -1rem;
+    }
+    &__titre-section {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        padding-right: 5*$padding;
+        font-weight: 800;
+    }
+    &__precision {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__check {
+        color: $color;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+    &:hover &__check {
+        transform: rotate(0);
+    }
+}
+
+.un {
+    animation: fad-in 0.9s;
+}
+
+.deux {
+    animation: fad-in 2s;
+}
+
+.trois {
+    animation: fad-in 4s;
+}
+
+@keyframes fad-in {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
