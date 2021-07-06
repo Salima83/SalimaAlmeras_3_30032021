@@ -2,8 +2,9 @@
 @import'../base/-loader.scss';
 @import'../base/-variables.scss';
 @import'../base/-media.scss';
-$color:white;
+@import '../base/-variables.scss';
 $padding:1rem;
+$color:white;
 @mixin btn {
     cursor: pointer;
     background-image: linear-gradient($primary-color, $secondary-color);
@@ -169,7 +170,7 @@ body {
         font-weight: 800;
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         background-size: 200% 100%;
         background-position: 100%;
         transition: background-position 275ms ease;
@@ -286,7 +287,7 @@ li {
     animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
     animation-fill-mode: both;
     transform: translateY(50px);
-    &__confirmed {
+    &__confirmer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -298,7 +299,7 @@ li {
         margin-right: -100px;
         transition-duration: 0.5s;
     }
-    &:hover &__confirmed {
+    &:hover &__confirmer {
         margin-right: -1rem;
     }
     &__titre-section {
@@ -331,15 +332,15 @@ li {
     }
 }
 
-.One {
+.un {
     animation: fad-in 0.9s;
 }
 
-.two {
+.deux {
     animation: fad-in 2s;
 }
 
-.three {
+.trois {
     animation: fad-in 4s;
 }
 

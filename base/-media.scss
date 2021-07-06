@@ -1,5 +1,11 @@
 $desktop-width: 1024px;
 @media (min-width: $desktop-width) {
+    #logo {
+        display: flex;
+        margin: auto;
+        width: 30%;
+        padding: .5rem;
+    }
     .Fonctionnement {
         width: 30%;
         margin-left: auto;

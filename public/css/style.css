@@ -46,6 +46,13 @@
   }
 }
 @media (min-width: 1024px) {
+  #logo {
+    display: flex;
+    margin: auto;
+    width: 30%;
+    padding: 0.5rem;
+  }
+
   .Fonctionnement {
     width: 30%;
     margin-left: auto;
@@ -247,7 +254,7 @@ body {
   font-weight: 800;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
@@ -381,7 +388,7 @@ li {
   animation-fill-mode: both;
   transform: translateY(50px);
 }
-.sous-titre__confirmed {
+.sous-titre__confirmer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,7 +400,7 @@ li {
   margin-right: -100px;
   transition-duration: 0.5s;
 }
-.sous-titre:hover .sous-titre__confirmed {
+.sous-titre:hover .sous-titre__confirmer {
   margin-right: -1rem;
 }
 .sous-titre__titre-section {
@@ -425,15 +432,15 @@ li {
   transform: rotate(0);
 }
 
-.One {
+.un {
   animation: fad-in 0.9s;
 }
 
-.two {
+.deux {
   animation: fad-in 2s;
 }
 
-.three {
+.trois {
   animation: fad-in 4s;
 }
 
