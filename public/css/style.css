@@ -98,28 +98,6 @@
     justify-content: center;
   }
 }
-.liens-Fonctionnement {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 1rem;
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-}
-
-li {
-  padding-bottom: 0.5rem;
-}
-
-.titre-footer {
-  display: flex;
-  margin-left: 1rem;
-  font-family: "Shrikhand";
-}
-
 .retour {
   display: flex;
   align-content: center;
@@ -458,6 +436,28 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.liens-Fonctionnement {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+li {
+  padding-bottom: 0.5rem;
+}
+
+.titre-footer {
+  display: flex;
+  margin-left: 1rem;
+  font-family: "Shrikhand";
 }
 
 /*# sourceMappingURL=style.css.map */

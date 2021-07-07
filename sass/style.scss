@@ -176,3 +176,25 @@ body {
     left: 0;
     right: 0;
 }
+
+.liens-Fonctionnement {
+    text-decoration: none;
+    color: $color;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: $padding;
+    padding-top: 0rem;
+    padding-bottom: $padding;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+}
