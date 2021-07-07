@@ -1,0 +1,41 @@
+$desktop-width: 1024px;
+@media (min-width: $desktop-width) {
+    #logo {
+        display: flex;
+        margin: auto;
+        width: 30%;
+        padding: .5rem;
+    }
+    .Fonctionnement {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titre {
+        margin-left: 1rem;
+    }
+    .conteneur-menus {
+        min-height: 800px;
+        margin-top: -1rem;
+    }
+    .les-menus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu {
+        max-width: 500px;
+        margin: 2rem;
+        margin-bottom: 3rem;
+    }
+    .menus {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contenue1 {
+        display: flex;
+        justify-content: center;
+    }
+}
