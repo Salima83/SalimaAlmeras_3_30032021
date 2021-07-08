@@ -1,12 +1,11 @@
-@import '../base/variables.scss';
+@import "../base/utils/variables";
 @import'../base/loader.scss';
-@import'../base/variables.scss';
+@import "../base/utils/variables";
 @import'../base/media.scss';
-@import '../base/variables.scss';
-@import'../base/variables.scss';
-@import'../base/variables.scss';
+@import "../base/utils/variables";
+@import "../base/utils/variables";
+@import "../base/utils/variables";
 @import'../base/pages.scss';
-@import'../base/variables.scss';
 body {
     margin: 0 auto;
     font-family: $font-stack;
