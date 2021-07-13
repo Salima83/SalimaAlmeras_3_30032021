@@ -410,7 +410,10 @@ body {
   animation: bg-pan-bottom 8s both;
 }
 @keyframes bg-pan-bottom {
-  from, to {
+  from {
+    color: #ce70e6;
+  }
+  to {
     color: rgba(255, 121, 218, 0.8) 0%;
   }
   10% {
@@ -429,16 +432,16 @@ body {
     color: #ce70e6;
   }
   60% {
-    color: #8e4f9c;
+    color: #ce70e6;
   }
   70% {
     color: #ac6dba;
   }
   80% {
-    color: #7c418b;
+    color: #ac6dba;
   }
   90% {
-    color: #7c418b;
+    color: #ac6dba;
   }
 }
 
