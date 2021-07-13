@@ -145,7 +145,6 @@
                     overflow: hidden;
                     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
                     transition: all 0.3s linear 0s;
-                    position: relative;
                     font-weight: 800;
                     background-clip: border-box;
                     -webkit-background-clip: text;
@@ -163,7 +162,7 @@
                         color: hsl(288, 70%, 67%);
                     }
                     to {
-                        color: rgba(255, 121, 218, 0.8) 0%;
+                        color: hsl(288, 70%, 67%);
                     }
                     10% {
                         color: hsl(288, 70%, 67%);

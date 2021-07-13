@@ -396,7 +396,6 @@ body {
   overflow: hidden;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   transition: all 0.3s linear 0s;
-  position: relative;
   font-weight: 800;
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -414,7 +413,7 @@ body {
     color: #ce70e6;
   }
   to {
-    color: rgba(255, 121, 218, 0.8) 0%;
+    color: #ce70e6;
   }
   10% {
     color: #ce70e6;
