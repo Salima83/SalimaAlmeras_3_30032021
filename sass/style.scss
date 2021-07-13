@@ -156,14 +156,16 @@
             text-decoration: none; // text decorations are clipped in WebKit browsers
             animation-fill-mode: both;
             animation-delay: 1s;
-            animation: progressive;
+            animation: kenburns-top 5s ease-out both;
         }
-        @keyframes progressive {
-            from {
-                top: 0px;
+        @keyframes kenburns-top {
+            0% {
+                transform: scale(1) translateY(0);
+                transform-origin: 50% 16%;
             }
-            to {
-                top: 200px;
+            100% {
+                transform: scale(1.25) translateY(-15px);
+                transform-origin: top;
             }
         }
     }
