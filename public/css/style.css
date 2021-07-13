@@ -407,16 +407,14 @@ body {
   text-decoration: none;
   animation-fill-mode: both;
   animation-delay: 1s;
-  animation: kenburns-top 5s ease-out both;
+  animation: bg-pan-bottom 8s both;
 }
-@keyframes kenburns-top {
+@keyframes bg-pan-bottom {
   0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
+    background-position: 50% 0%;
   }
   100% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
+    background-position: 50% 100%;
   }
 }
 
