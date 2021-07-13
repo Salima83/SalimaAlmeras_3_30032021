@@ -406,15 +406,39 @@ body {
   transition: background-position 275ms ease;
   text-decoration: none;
   animation-fill-mode: both;
-  animation-delay: 1s;
+  animation-delay: 4s;
   animation: bg-pan-bottom 8s both;
 }
 @keyframes bg-pan-bottom {
-  0% {
-    background-position: 50% 0%;
+  from, to {
+    color: rgba(255, 121, 218, 0.8) 0%;
   }
-  100% {
-    background-position: 50% 100%;
+  10% {
+    color: #ce70e6;
+  }
+  20% {
+    color: #ce70e6;
+  }
+  30% {
+    color: #ce70e6;
+  }
+  40% {
+    color: #ce70e6;
+  }
+  50% {
+    color: #ce70e6;
+  }
+  60% {
+    color: #ce70e6;
+  }
+  70% {
+    color: #ce70e6;
+  }
+  80% {
+    color: #7c418b;
+  }
+  90% {
+    color: #7c418b;
   }
 }
 
