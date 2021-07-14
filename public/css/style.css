@@ -394,15 +394,14 @@ body {
   font-size: 2em;
   font-weight: 800;
   overflow: hidden;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   transition: all 0.3s linear 0s;
   font-weight: 800;
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
+  transition: background-position 275ms ease;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease;
   text-decoration: none;
   animation-fill-mode: both;
   animation-delay: 4s;
@@ -414,33 +413,6 @@ body {
   }
   to {
     color: #ce70e6;
-  }
-  10% {
-    color: #ce70e6;
-  }
-  20% {
-    color: #ce70e6;
-  }
-  30% {
-    color: #ce70e6;
-  }
-  40% {
-    color: #ce70e6;
-  }
-  50% {
-    color: #ce70e6;
-  }
-  60% {
-    color: #ce70e6;
-  }
-  70% {
-    color: #ac6dba;
-  }
-  80% {
-    color: #ac6dba;
-  }
-  90% {
-    color: #ac6dba;
   }
 }
 
