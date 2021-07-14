@@ -409,16 +409,16 @@ body {
 }
 @keyframes bg-pan-bottom {
   0% {
-    color: #b963cf;
+    color: #9356DC;
   }
   30% {
     color: violet;
   }
   68%, 72% {
-    color: #b963cf;
+    color: #9475b9;
   }
   100% {
-    color: #b963cf;
+    color: #9356DC;
   }
 }
 

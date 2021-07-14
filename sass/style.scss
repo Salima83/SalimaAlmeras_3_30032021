@@ -158,7 +158,7 @@ body {
     }
     @keyframes bg-pan-bottom {
         0% {
-            color: hsl(288, 53%, 60%);
+            color: #9356DC;
         }
         30% {
             color: violet
@@ -166,10 +166,10 @@ body {
         ;
         68%,
         72% {
-            color: hsl(288, 53%, 60%);
+            color: #9475b9;
         }
         100% {
-            color: hsl(288, 53%, 60%);
+            color: #9356DC;
         }
     }
 }
