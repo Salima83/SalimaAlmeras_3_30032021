@@ -1,205 +1,212 @@
-    @import "../base/utils/variables";
-    @import'../base/loader.scss';
-    @import "../base/utils/variables";
-    @import'../base/media.scss';
-    @import "../base/utils/variables";
-    @import "../base/utils/variables";
-    @import "../base/utils/variables";
-    @import'../base/pages.scss';
-    body {
-        margin: 0 auto;
-        font-family: $font-stack;
+@import "../base/utils/variables";
+@import'../base/loader.scss';
+@import "../base/utils/variables";
+@import'../base/media.scss';
+@import "../base/utils/variables";
+@import "../base/utils/variables";
+@import "../base/utils/variables";
+@import'../base/pages.scss';
+body {
+    margin: 0 auto;
+    font-family: $font-stack;
+}
+
+#logo {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    padding: .5rem;
+}
+
+.section1 {
+    box-shadow: 0 0 0.3rem 0px #757373;
+    background-color: $bg;
+    padding: 0.9rem $padding;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.zone {
+    margin-right: $padding;
+}
+
+.section2 {
+    padding: $padding;
+    text-align: center;
+    background-color: #eee;
+    &__.discription-restaurant {
+        font-weight: 300;
+        margin: 1.5rem 0;
     }
-    
-    #logo {
+    .explorer {
         display: flex;
-        margin: auto;
-        width: 40%;
-        padding: .5rem;
+        align-content: center;
+        cursor: pointer;
     }
-    
-    .section1 {
-        box-shadow: 0 0 0.3rem 0px #757373;
-        background-color: $bg;
-        padding: 0.9rem $padding;
+    .explorer__btn {
+        @include btn;
     }
-    
-    .map {
+}
+
+.fonctionnement {
+    padding: 2*$padding $padding;
+    counter-reset: section3;
+    .fonction1 {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: auto;
+        background-color: #f2f2f2;
+        border: #eee solid 2px;
+        border-radius: 1.5rem;
         font-weight: bold;
+        margin-bottom: 1rem;
+        box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
     }
-    
-    .zone {
-        margin-right: $padding;
-    }
-    
-    .section2 {
-        padding: $padding;
-        text-align: center;
-        background-color: #eee;
-        &__.discription-restaurant {
-            font-weight: 300;
-            margin: 1.5rem 0;
-        }
-        .explorer {
-            display: flex;
-            align-content: center;
-            cursor: pointer;
-        }
-        .explorer__btn {
-            @include btn;
-        }
-    }
-    
-    .fonctionnement {
-        padding: 2*$padding $padding;
-        counter-reset: section3;
-        .fonction1 {
-            display: flex;
-            align-items: center;
-            height: 3rem;
-            width: auto;
-            background-color: #f2f2f2;
-            border: #eee solid 2px;
-            border-radius: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            box-shadow: 0.25rem 0.25rem 0rem rgb(0 0 0 / 10%);
-        }
-        .compteur::before {
-            counter-increment: section3 1;
-            content: counter(section3);
-            background: $primary-color;
-            border-radius: 100px;
-            padding: 0rem 0.2rem;
-            color: $color;
-            font-size: small;
-            margin-left: -.4rem;
-        }
-        .icone-fonctionnement {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: -2px;
-            min-width: 3rem;
-            min-height: 3rem;
-        }
-    }
-    
-    .image1 {
-        object-fit: cover;
-        height: 200px;
-        width: 100%;
-        border-radius: 1rem 1rem 0 0;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-        border-radius: 1rem;
-        margin-top: 2rem;
-        text-decoration: none;
-        background-color: $color;
-        color: black;
-        .titre-menu {
-            display: grid;
-            grid-template-columns: 1fr 1.25rem;
-            padding: $padding;
-        }
-        .les-menus {
-            grid-template-columns: repeat(1, 1fr);
-            column-gap: 2rem;
-            row-gap: 2rem;
-        }
-        .note {
-            position: absolute;
-            padding: 0.4rem $padding;
-            right: $padding;
-            color: green;
-            background-color: $tertiary-color;
-            border-radius: 6px;
-            margin-top: $padding;
-            font-weight: 900;
-        }
-        .region {
-            margin-top: 0px;
-        }
-        .titre-contenue1 {
-            text-decoration: none;
-            margin: 0;
-        }
-    }
-    
-    .far.fa-heart {
-        position: relative;
-        right: 20px;
-        &:hover {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            font-size: 2em;
-            font-weight: 800;
-            overflow: hidden;
-            transition: all 0.3s linear 0s;
-            font-weight: 800;
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            color: transparent;
-            transition: background-position 275ms ease;
-            background-size: 200% 100%;
-            background-position: 100%;
-            text-decoration: none; // text decorations are clipped in WebKit browsers
-            animation-fill-mode: both;
-            animation-delay: 4s;
-            animation: bg-pan-bottom 8s both;
-        }
-        @keyframes bg-pan-bottom {
-            from {
-                color: hsl(288, 53%, 60%);
-            }
-            to {
-                color: hsl(288, 70%, 67%);
-            }
-        }
-    }
-    
-    .contenue {
-        padding: $padding;
-        background-color: #eee;
-    }
-    
-    .footer {
-        position: relative;
-        background-color: black;
-        text-decoration: none;
-        padding: $padding;
+    .compteur::before {
+        counter-increment: section3 1;
+        content: counter(section3);
+        background: $primary-color;
+        border-radius: 100px;
+        padding: 0rem 0.2rem;
         color: $color;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        font-size: small;
+        margin-left: -.4rem;
     }
-    
-    .liens-fonctionnement {
-        text-decoration: none;
-        color: $color;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding-left: $padding;
-        padding-top: 0rem;
-        padding-bottom: $padding;
-    }
-    
-    li {
-        padding-bottom: 0.5rem;
-    }
-    
-    .titre-footer {
+    .icone-fonctionnement {
         display: flex;
-        margin-left: 1rem;
-        font-family: "Shrikhand";
+        align-items: center;
+        justify-content: center;
+        margin: -2px;
+        min-width: 3rem;
+        min-height: 3rem;
     }
+}
+
+.image1 {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: $color;
+    color: black;
+    .titre-menu {
+        display: grid;
+        grid-template-columns: 1fr 1.25rem;
+        padding: $padding;
+    }
+    .les-menus {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .note {
+        position: absolute;
+        padding: 0.4rem $padding;
+        right: $padding;
+        color: green;
+        background-color: $tertiary-color;
+        border-radius: 6px;
+        margin-top: $padding;
+        font-weight: 900;
+    }
+    .region {
+        margin-top: 0px;
+    }
+    .titre-contenue1 {
+        text-decoration: none;
+        margin: 0;
+    }
+}
+
+.far.fa-heart {
+    position: relative;
+    right: 20px;
+    &:hover {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 2em;
+        font-weight: 800;
+        overflow: hidden;
+        transition: all 0.3s linear 0s;
+        font-weight: 800;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        text-decoration: none; // text decorations are clipped in WebKit browsers
+        animation-fill-mode: both;
+        animation-delay: 4s;
+        transition: background-position 275ms ease;
+        animation: bg-pan-bottom 8s both;
+    }
+    @keyframes bg-pan-bottom {
+        0% {
+            color: hsl(288, 53%, 60%);
+        }
+        30% {
+            color: violet
+        }
+        ;
+        68% {
+            color: hsl(288, 53%, 60%);
+        }
+        100% {
+            color: hsl(288, 53%, 60%);
+        }
+    }
+}
+
+.contenue {
+    padding: $padding;
+    background-color: #eee;
+}
+
+.footer {
+    position: relative;
+    background-color: black;
+    text-decoration: none;
+    padding: $padding;
+    color: $color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.liens-fonctionnement {
+    text-decoration: none;
+    color: $color;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: $padding;
+    padding-top: 0rem;
+    padding-bottom: $padding;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+}

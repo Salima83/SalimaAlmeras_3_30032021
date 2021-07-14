@@ -399,20 +399,26 @@ body {
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
-  transition: background-position 275ms ease;
   background-size: 200% 100%;
   background-position: 100%;
   text-decoration: none;
   animation-fill-mode: both;
   animation-delay: 4s;
+  transition: background-position 275ms ease;
   animation: bg-pan-bottom 8s both;
 }
 @keyframes bg-pan-bottom {
-  from {
+  0% {
     color: #b963cf;
   }
-  to {
-    color: #ce70e6;
+  30% {
+    color: violet;
+  }
+  68% {
+    color: #b963cf;
+  }
+  100% {
+    color: #b963cf;
   }
 }
 
